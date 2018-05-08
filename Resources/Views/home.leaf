@@ -1,0 +1,32 @@
+#extend("base")
+
+#export("title") { richardkolasa.com }
+
+#export("content") {
+    <div class="header">
+      <div class="header-content">
+        <a href="/">
+          <h1>Richard Kolasa</h1>
+        </a>
+        <a href="mailto:hello@richardkolasa.com">
+            <p class="email">hello@richardkolasa.com</p>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="home-grid">
+        <h2 class="daily-message">
+            #(dailyMessage)
+        </h2>
+        <p class="bio">
+          I spend my time writing code, making images, <a href="/reading-list">reading</a>, 
+          <a href="https://www.twitter.com/richardkolasa">tweeting</a>, and diving into the latest mobile or web tech. 
+          I also love building, <a href="/archive">curating</a>, and maintaining my family's 
+          photo and vidoe archive spanning nearly 100 years.
+        </p>
+      </div>
+      <div class="profile-image">
+        <img src="/images/selfie.jpg">
+      </div>
+    </div>
+}

@@ -16,7 +16,7 @@ class PostControllerTests: TestCase {
     /// this is usually an effective way to test your
     /// application in a convenient and safe manner
     /// See RouteTests for an example of a live server test
-    let controller = HelloController(TestViewRenderer())
+    let controller = HomeController(TestViewRenderer())
 
     func testIndex() throws {
         let req = Request.makeTest(method: .get)

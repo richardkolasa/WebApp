@@ -1,0 +1,54 @@
+#extend("base")
+
+#export("title") { richardkolasa.com }
+
+#export("content") {
+  <div class="books-wrapper">
+    <div class="header">
+      <div class="header-content">
+        <a href="/">
+          <h1>Richard Kolasa</h1>
+        </a>
+        <a href="mailto:hello@richardkolasa.com">
+            <p class="email">hello@richardkolasa.com</p>
+        </a>
+      </div>
+      <div class="books-container">
+        <div class="book-1">
+          <a href="http://a.co/1XSHWeO">
+            <img src="/images/cause-of-all-nations.jpg" alt="The Cause of All Nations by Don H. Doyle">
+          </a>
+        </div>
+        <div class="book-2">
+          <a href="http://a.co/2ApOvK8">
+            <img src="/images/creativity-inc-book-cover.jpg" alt="Creativity, Inc. by Ed Catmull">
+          </a>
+        </div>
+        <div class="book-3">
+          <a href="http://a.co/0PMTViW">
+            <img src="/images/the-news.jpg" alt="The News A User's Manual by Alain de Botton">
+          </a>
+        </div>
+        <div class="book-4">
+          <a href="http://a.co/53keY7e">
+            <img src="/images/dying-for-a-paycheck.jpg" alt="Dying for a Paycheck by Jeffrey Pfeffer">
+          </a>
+        </div>
+        <div class="book-5">
+          <a href="http://a.co/jlvfQW4">
+            <img src="/images/open-organization.jpg" alt="The Open Organization by Jim Whitehurst">
+          </a>
+        </div>
+        <div class="book-6">
+          <a href="http://a.co/cw3rE1E">
+            <img src="/images/1776.jpg" alt="1776 by David McCullough">
+          </a>
+        </div>
+        <div class="book-7">
+          <a href="http://a.co/5mTrViu">
+            <img src="/images/deadwake.jpg" alt="Dead Wake by Erik Larson">
+          </a>
+        </div>
+      </div>
+  </div>
+}

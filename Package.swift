@@ -4,13 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "Hello",
-    products: [
+    pkgConfig: [
         .library(name: "App", targets: ["App"]),
         .executable(name: "Run", targets: ["Run"])
-    ],
-    dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "2.2.0")),
-        .package(url: "https://github.com/vapor/leaf-provider.git", .upToNextMajor(from: "1.1.0")),
     ],
     targets: [
         .target(
@@ -20,6 +16,10 @@ let package = Package(
         ),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App", "Testing"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "2.2.0")),
+        .package(url: "https://github.com/vapor/leaf-provider.git", .upToNextMajor(from: "1.1.0")),
     ]
 )
 

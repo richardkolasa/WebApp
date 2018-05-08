@@ -4,9 +4,9 @@
 	<title>#import("title")</title>
 	<link rel="stylesheet" href="/styles/app.css">
 </head>
-<body>
+<div class="App">
 
 #import("content")
 
-</body>
+</div>
 </html>

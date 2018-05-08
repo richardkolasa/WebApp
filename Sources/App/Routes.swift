@@ -9,17 +9,12 @@ final class Routes: RouteCollection {
     func build(_ builder: RouteBuilder) throws {
         /// GET /
         builder.get { req in
-            return try self.view.make("welcome")
+            return try self.view.make("home")
         }
+
+        builder.resource("reading-list", ReadingListController(view))
 
         /// GET /hello/...
-        builder.resource("hello", HelloController(view))
-
-        // response to requests to /info domain
-        // with a description of the request
-        builder.get("info") { req in
-            return req.description
-        }
-
+        builder.resource("home", HomeController(view))
     }
 }

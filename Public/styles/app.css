@@ -2,8 +2,86 @@ body, html {
 	height: 100%;
 }
 
+h1 {
+    margin: 5px;
+}
+
 body {
 	font-family: sans-serif;
+}
+
+div.header-content {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+div.header h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+}
+
+div.header a {
+    text-decoration: none;
+    color: black;
+}
+
+div.header {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.397);
+    margin-bottom: 15px;
+}
+
+div.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.home-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p.email {
+    font-size: 0.9em;
+    text-align: center;
+    color: rgba(2, 170, 179, 0.808);
+}
+
+h2.daily-message {
+    font-size: 4em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: black;
+    margin-top: 20px;
+}
+
+p.bio {
+    font-size: 3em;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    padding-right: 10px;
+    margin-top: -20px;
+}
+
+div.profile-image {
+    margin-right: 10px;
+    align-self: center;
+}
+
+div.profile-image img {
+    max-width: 17em;
+    max-height: 17em;
 }
 
 div.welcome {
@@ -11,9 +89,194 @@ div.welcome {
 	text-align: center;
 }
 
+div.App {
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    justify-content: center;
+}
+
 div.welcome img {
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
 	width: 300px;
+}
+
+div.books-wrapper {
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+div.books-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-areas:
+    "book1 book2 book3" "book4 book5 book6" "book7 book8 book9";
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    color: black;
+    padding-bottom: 40px;
+}
+
+div.books-container a {
+    text-decoration: none;
+    color: black;
+}
+
+div.books-container img {
+    max-width: 100%;
+    box-shadow: -5px 5px 10px #888888;
+}
+
+div.books-container p {
+    font-size: 1.2em;
+    grid-area: heading;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    line-height: 1.2em;
+    font-style: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 100;
+}
+
+div.book-1 {
+    grid-area: book1;
+}
+
+div.book-2 {
+    grid-area: book2;
+}
+
+div.book-3 {
+    grid-area: book3;
+}
+
+div.book-4 {
+    grid-area: book4;
+}
+
+div.book-5 {
+    grid-area: book5;
+}
+
+div.book-6 {
+    grid-area: book6;
+}
+
+div.book-7 {
+    grid-area: book7;
+}
+
+@media screen and (max-width: 890px) {
+    div.content {
+        flex-direction: column;
+    }
+    div.profile-image {
+        order: 1;
+    }
+    div.home-grid {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    div.profile-image img {
+        max-width: 12em;
+        max-height: 12em;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    h2.daily-message {
+        font-size: 3.2em;
+    }
+
+    p.bio {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    h2.daily-message {
+        font-size: 2.9em;
+    }
+
+    p.bio {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    h2.daily-message {
+        font-size: 2.6em;
+    }
+
+    p.bio {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.profile-image img {
+        max-width: 10em;
+        max-height: 10em;
+    }
+    h2.daily-message h1 {
+        font-size: 2.3em;
+    }
+    p.bio {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    div.profile-image img {
+        max-width: 9em;
+        max-height: 9em;
+    }
+    h2.daily-message h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.profile-image img {
+        max-width: 8.3em;
+        max-height: 8.3em;
+    }
+    h2.daily-message {
+        font-size: 1.8em;
+    }
+    p.bio {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    div.profile-image img {
+        max-width: 8.3em;
+        max-height: 8.3em;
+    }
+    h2.daily-message {
+        font-size: 1.6em;
+    }
+    /* .bio {
+     font-size: 0.5em;
+     margin-top: -10px;
+     } */
+}
+
+@media screen and (max-width: 400px) {
+    div.profile-image img {
+        max-width: 8.3em;
+        max-height: 8.3em;
+    }
+    h2.daily-message {
+        margin-top: 10px;
+    }
 }
